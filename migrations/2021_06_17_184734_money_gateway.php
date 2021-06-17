@@ -18,7 +18,7 @@ class MoneyGateway extends Migration
                 'code' => 'money-gateway',
                 'label' => 'Money',
                 'enabled' => 0,
-                'settings' => '',
+                'settings' => null,
             ]);
         }
     }
