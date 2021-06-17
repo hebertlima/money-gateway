@@ -1,0 +1,49 @@
+{
+  "name": "hdelima/money-gateway",
+  "description": "Money Gateway Provider",
+  "type": "library",
+  "keywords": [
+    "http",
+    "rest",
+    "web service",
+    "Money",
+    "laravel money gateway"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "hdelima",
+      "email": "hebert.dev@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hdelima\\MoneyGateway\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "guzzlehttp/guzzle": "~7.0",
+    "illuminate/support": "~6.0|~7.0|~8.0",
+    "nesbot/carbon": "~2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0|^9.0",
+    "symfony/var-dumper": "~5.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hdelima\\MoneyGateway\\Providers\\MoneyGatewayServiceProvider"
+      ],
+      "aliases": {
+        "MoneyGateway": "Hdelima\\MoneyGateway\\Facades\\MoneyGateway"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
