@@ -5,7 +5,7 @@ namespace Hdelima\MoneyGateway\Providers;
 use Illuminate\Support\ServiceProvider;
 use Hdelima\MoneyGateway\Services\MoneyGateway as MoneyGatewayClient;
 
-class MoneyGatewayProvider extends ServiceProvider
+class MoneyGatewayServiceProvider extends ServiceProvider
 {
     protected $defer = false;
 
