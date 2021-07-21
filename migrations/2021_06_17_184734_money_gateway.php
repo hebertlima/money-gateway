@@ -16,6 +16,7 @@ class MoneyGateway extends Migration
         if (Schema::hasTable('gateways')) {
             \DB::table('gateways')->insert([
                 'code' => 'money-gateway',
+                'icon' => '/vendor/hdelima/MoneyGateway/public/icon.png',
                 'label' => 'Money',
                 'enabled' => 0,
                 'settings' => null,
